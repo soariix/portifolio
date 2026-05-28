@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sara Soares Pacheco | Desenvolvedora Fullstack</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <span class="nav-logo">Sara<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Sara Soares<br /><span class="accent">Pacheco</span></h1>
+      <p class="hero-role"><span class="typing" id="typingText"></span><span class="cursor">|</span></p>
+      <p class="hero-desc">
+        Desenvolvedora Fullstack apaixonada por criar sistemas completos — do banco de dados ao front-end.
+        Especialista em Laravel, Vue.js, React, NestJS e muito mais.
+      </p>
+      <div class="hero-actions">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline">Entrar em Contato</a>
+      </div>
+      <div class="hero-stack">
+        <span class="tag">Laravel</span>
+        <span class="tag">Vue.js</span>
+        <span class="tag">React</span>
+        <span class="tag">NestJS</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">PostgreSQL</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-filename">Sara.ts</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">const</span> <span class="fn">sara</span> = {
+  <span class="prop">role</span>: <span class="str">"Fullstack Developer"</span>,
+  <span class="prop">location</span>: <span class="str">"São Caetano, PE"</span>,
+  <span class="prop">education</span>: [
+    <span class="str">"ADS - UNINASSAU"</span>,
+    <span class="str">"Eng. Software - UNIFAVIP"</span>
+  ],
+  <span class="prop">stack</span>: [
+    <span class="str">"Laravel"</span>, <span class="str">"Vue.js"</span>,
+    <span class="str">"React"</span>, <span class="str">"NestJS"</span>,
+    <span class="str">"Spring Boot"</span>, <span class="str">"PostgreSQL"</span>
+  ],
+  <span class="prop">superpower</span>: <span class="str">"Criar sistemas do zero"</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section-title">Sobre <span class="accent">Mim</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Sou desenvolvedora fullstack com experiência em criar sistemas completos do zero —
+            banco de dados, back-end, front-end e deploy. Tenho o perfil de quem não depende de equipe
+            para entregar: já desenvolvi plataformas inteiras sozinha para prefeituras, sistemas PDV
+            para distribuidoras e apps de gestão para salões de beleza.
+          </p>
+          <p>
+            Sou formada em <strong>Análise e Desenvolvimento de Sistemas pela UNINASSAU</strong> e estou concluindo
+            a pós-graduação em <strong>Engenharia de Software pela UNIFAVIP</strong>.
+          </p>
+          <p>
+            Tenho facilidade em aprender novas tecnologias rapidamente e gosto de trabalhar com autonomia,
+            entregando soluções funcionais, bem estruturadas e pensadas no usuário final.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Backend</h4>
+            <div class="skill-tags">
+              <span>Laravel</span><span>PHP</span><span>NestJS</span>
+              <span>Node.js</span><span>Spring Boot</span><span>Java</span>
+              <span>AJAX</span><span>jQuery</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Frontend</h4>
+            <div class="skill-tags">
+              <span>Vue.js</span><span>React</span><span>React Native</span>
+              <span>HTML5</span><span>CSS3</span><span>Bootstrap</span>
+              <span>Tailwind CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Banco de Dados</h4>
+            <div class="skill-tags">
+              <span>PostgreSQL</span><span>MySQL</span><span>SQLite</span>
+              <span>TypeORM</span><span>Eloquent ORM</span><span>Prisma</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>DevOps & Ferramentas</h4>
+            <div class="skill-tags">
+              <span>Docker</span><span>Git</span><span>Vite</span>
+              <span>CI/CD</span><span>AWS</span><span>Swagger</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section class="section section-dark" id="experiencia">
+    <div class="container">
+      <h2 class="section-title">Experiência <span class="accent">Profissional</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Desenvolvedora Fullstack</h3>
+                <p class="company">IVF</p>
+              </div>
+              <span class="timeline-badge">Emprego</span>
+            </div>
+            <p class="timeline-desc">
+              Desenvolvimento de sistemas públicos para prefeituras. Criação de plataformas completas
+              com autonomia total — desde a modelagem do banco de dados até o front-end — entregando
+              soluções como dashboards, sistemas multi-tenant e SaaS.
+            </p>
+            <div class="timeline-stack">
+              <span>Laravel</span><span>PostgreSQL</span><span>Multi-tenant</span>
+              <span>SaaS</span><span>Dashboards</span><span>PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Desenvolvedora Freelancer</h3>
+                <p class="company">Araujo Distribuidora</p>
+              </div>
+              <span class="timeline-badge freelance">Freelance</span>
+            </div>
+            <p class="timeline-desc">
+              Desenvolvimento de sistema completo de PDV (Ponto de Venda) e gestão de estoque para
+              distribuidora de bebidas. Sistema com controle de acesso por perfil, múltiplas formas
+              de pagamento, relatórios gerenciais e dashboards.
+            </p>
+            <div class="timeline-stack">
+              <span>Laravel 12</span><span>TailwindCSS 4</span><span>Vite</span>
+              <span>SQLite</span><span>MySQL</span><span>PHP 8.2</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Desenvolvedora Backend (Mobile)</h3>
+                <p class="company">Projeto Acadêmico — UNINASSAU</p>
+              </div>
+              <span class="timeline-badge academic">Acadêmico</span>
+            </div>
+            <p class="timeline-desc">
+              Responsável pelo back-end completo de um projeto mobile desenvolvido em dupla na graduação.
+              API construída com Spring Boot e Java, incluindo toda a arquitetura, modelagem e endpoints.
+            </p>
+            <div class="timeline-stack">
+              <span>Spring Boot</span><span>Java</span><span>API REST</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="section-title">Projetos <span class="accent">em Destaque</span></h2>
+      <div class="projects-grid">
+
+        <!-- SuaArena -->
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon">🎟️</div>
+            <div class="project-links">
+              <a href="https://github.com/soariix" target="_blank" rel="noopener" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>SuaArena</h3>
+          <p class="project-type">Plataforma de Venda de Ingressos</p>
+          <p class="project-desc">
+            Plataforma completa para venda de ingressos e gestão de eventos ao vivo (shows, vaquejadas, festivais).
+            Arquitetura monorepo com perfis distintos para usuários, organizadores e porteiros. Check-in por QR Code.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight">
+              <span class="highlight-icon">🏗️</span>
+              <span>Arquitetura monorepo</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">📱</span>
+              <span>QR Code check-in</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">🔐</span>
+              <span>JWT + Refresh Token</span>
+            </div>
+            <div class="highlight">
+              <span class="highlight-icon">📊</span>
+              <span>Dashboard para organizadores</span>
+            </div>
+          </div>
+          <div class="project-stack">
+            <span>NestJS</span><span>React</span><span>TypeScript</span>
+            <span>PostgreSQL</span><span>Docker</span><span>Tailwind CSS</span>
+            <span>JWT</span><span>Swagger</span>
+          </div>
+        </div>
+
+        <!-- NailBook -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">💅</div>
+            <div class="project-links">
+              <a href="https://github.com/soariix/NailBook" target="_blank" rel="noopener" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>NailBook</h3>
+          <p class="project-type">Sistema de Gestão para Salões de Beleza</p>
+          <p class="project-desc">
+            Projeto pessoal criado para facilitar o dia a dia da minha mãe. Sistema completo de agendamentos,
+            clientes e serviços com SPA em Vue.js e API RESTful em Laravel com autenticação Sanctum.
+          </p>
+          <div class="project-stack">
+            <span>Laravel 11</span><span>Vue.js 3</span><span>PostgreSQL</span>
+            <span>Laravel Sanctum</span><span>Bootstrap 5</span><span>Vite</span>
+          </div>
+        </div>
+
+        <!-- iFood Clone -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🍔</div>
+            <div class="project-links">
+              <a href="https://github.com/soariix/clone-ifood" target="_blank" rel="noopener" class="icon-link" title="GitHub">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3>iFood Clone</h3>
+          <p class="project-type">App Mobile com React Native</p>
+          <p class="project-desc">
+            Clone funcional do iFood com React Native (Expo) no mobile e Node.js + Prisma no backend.
+            Fluxo completo de autenticação, listagem de restaurantes, carrinho e pedidos.
+          </p>
+          <div class="project-stack">
+            <span>React Native</span><span>Expo</span><span>Node.js</span>
+            <span>Prisma</span><span>PostgreSQL</span><span>Zustand</span><span>JWT</span>
+          </div>
+        </div>
+
+        <!-- Araujo Distribuidora -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🏪</div>
+          </div>
+          <h3>Araujo Distribuidora</h3>
+          <p class="project-type">Sistema de PDV e Gestão de Estoque · Freelance</p>
+          <p class="project-desc">
+            Sistema completo de Ponto de Venda para distribuidora de bebidas. Múltiplas formas de pagamento,
+            controle de estoque, relatórios por fornecedor com lucro separado e controle de acesso por perfil.
+          </p>
+          <div class="project-stack">
+            <span>Laravel 12</span><span>TailwindCSS 4</span><span>Vite 7</span>
+            <span>SQLite</span><span>MySQL</span><span>PHP 8.2</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CURSOS -->
+  <section class="section section-dark" id="cursos">
+    <div class="container">
+      <h2 class="section-title">Cursos & <span class="accent">Certificações</span></h2>
+      <div class="courses-grid">
+
+        <div class="course-card">
+          <div class="course-issuer">Full Cycle</div>
+          <h3>Arquitetura em Camadas e MVC</h3>
+          <p class="course-date">Fevereiro de 2026</p>
+          <p class="course-desc">
+            Aprendi a estruturar sistemas de forma organizada usando Arquitetura em Camadas e MVC,
+            com foco em código limpo, redução de acoplamento e separação de responsabilidades.
+          </p>
+          <div class="course-skills">
+            <span>Arquitetura em Camadas</span><span>MVC</span><span>Clean Code</span>
+          </div>
+          <a href="#" class="course-link">Ver credencial →</a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-issuer">Full Cycle</div>
+          <h3>Fundamentos de Cloud Computing</h3>
+          <p class="course-date">Janeiro de 2026</p>
+          <p class="course-desc">
+            Cloud computing com foco em AWS: automação de deploy com CI/CD, infraestrutura como código,
+            segurança e otimização de custos. Práticas modernas de DevOps.
+          </p>
+          <div class="course-skills">
+            <span>AWS</span><span>CI/CD</span><span>IaC</span><span>DevOps</span>
+          </div>
+          <a href="#" class="course-link">Ver credencial →</a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-issuer">Rocketseat</div>
+          <h3>JavaScript</h3>
+          <p class="course-desc">
+            31 horas de JavaScript puro (Vanilla): lógica, programação assíncrona (Promises, Async/Await),
+            manipulação do DOM e integração com APIs.
+          </p>
+          <div class="course-skills">
+            <span>JavaScript</span><span>DOM</span><span>Async/Await</span><span>APIs</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-issuer">Rocketseat</div>
+          <h3>Fundamentos de HTML e CSS</h3>
+          <p class="course-desc">
+            Semântica, acessibilidade, layouts responsivos com Grid e Flexbox, animações e formulários.
+          </p>
+          <div class="course-skills">
+            <span>HTML5</span><span>CSS3</span><span>Flexbox</span><span>Grid</span><span>Responsivo</span>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-issuer">Full Cycle</div>
+          <h3>Git e Github</h3>
+          <p class="course-date">Maio de 2026</p>
+          <p class="course-desc">
+            Domínio completo de controle de versão com Git e GitHub: branches, merges, pull requests,
+            resolução de conflitos e boas práticas de versionamento em equipe.
+          </p>
+          <div class="course-skills">
+            <span>Git</span><span>GitHub</span><span>Controle de Versão</span>
+          </div>
+          <a href="https://fullcycle.com.br/certificado/66ef04f7-c332-49aa-8ac9-ea9c6d231229" target="_blank" rel="noopener" class="course-link">Ver credencial →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="container">
+      <h2 class="section-title">Vamos <span class="accent">Conversar?</span></h2>
+      <p class="contact-intro">
+        Estou disponível para novas oportunidades, freelas ou só para trocar uma ideia sobre tecnologia.
+      </p>
+      <div class="contact-cards">
+        <a href="mailto:Sarinhapachecosoares@gmail.com" class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <p class="contact-label">E-mail</p>
+            <p class="contact-value">Sarinhapachecosoares@gmail.com</p>
+          </div>
+        </a>
+        <a href="tel:+5581989533470" class="contact-card">
+          <div class="contact-icon">📱</div>
+          <div>
+            <p class="contact-label">Telefone / WhatsApp</p>
+            <p class="contact-value">(81) 98953-3470</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/soariix/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">💼</div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">linkedin.com/in/soariix</p>
+          </div>
+        </a>
+        <a href="https://github.com/soariix" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-icon">🐙</div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/soariix</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Feito com 💜 por <strong>Sara Soares Pacheco</strong> · São Caetano, PE</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
