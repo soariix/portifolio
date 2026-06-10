@@ -1,14 +1,9 @@
-// ============================
-// NAVBAR scroll effect
-// ============================
+
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
 
-// ============================
-// Mobile menu toggle
-// ============================
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -20,9 +15,6 @@ navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// ============================
-// Typing animation
-// ============================
 const roles = [
     'Desenvolvedora Fullstack',
     'Laravel & Vue.js',
@@ -57,9 +49,6 @@ function type() {
 }
 type();
 
-// ============================
-// Fade-in on scroll
-// ============================
 const observer = new IntersectionObserver(
     (entries) => {
         entries.forEach(entry => {
@@ -79,9 +68,6 @@ document.querySelectorAll(
     observer.observe(el);
 });
 
-// ============================
-// Active nav link highlight
-// ============================
 const sections = document.querySelectorAll('section[id]');
 
 window.addEventListener('scroll', () => {
